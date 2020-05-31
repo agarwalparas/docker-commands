@@ -15,4 +15,5 @@
 - docker network ls (List all Networks)
 - docker inspect <container-id> (Inspect gives all json output)
 - docker run --name <container-name> --network=none/bridge/host <image-name> (Run a container on network 'none' with image image name)
+- docker network create --driver bridge --subnet 182.18.0.1/24 --gateway 182.18.0.1 wp-mysql-network (Create a custom network on driver bridge/none/host with subnet,gateway and network name 'wp-mysql-network')
  
