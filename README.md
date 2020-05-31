@@ -5,6 +5,7 @@
 - docker ps (List all running containers)
 - docker ps -a (List all containers)
 - docker stop <container-id> (Stop a running container)
+- docker exec <container-id> <command> (Run a command on a running container)
 - docker rm <container-id> (Remove container from ps -a listing)
 - docker images
 - docker rmi <container-id> (Remove images from docker host)
@@ -13,5 +14,5 @@
 - docker build <docker-file> -t <name:tag> (Build a docker image with a docker file and set it to image name with tag)
 - docker network ls (List all Networks)
 - docker inspect <container-id> (Inspect gives all json output)
-- docker run --name <container-name> --network=none <image-name>
+- docker run --name <container-name> --network=none/bridge/host <image-name> (Run a container on network 'none' with image image name)
  
